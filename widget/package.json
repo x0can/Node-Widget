@@ -29,7 +29,10 @@
         "eslint-plugin-react": "7.22.0",
         "eslint-plugin-react-hooks": "4.2.0",
         "parcel": "1.12.3",
-        "prettier": "2.2.1"
+        "prettier": "2.2.1",
+        "@tailwindcss/postcss7-compat": "2.0.3",
+        "postcss": "7.0.35",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@2.0.3"
     },
     "dependencies": {
         "@shopify/app-bridge-react": "^2.0.5",
