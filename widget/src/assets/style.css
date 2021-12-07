@@ -4,7 +4,7 @@
 
 
 @layer components {
-  .search-label {
+  .button-container {
     margin-bottom: 15px;
     padding-top: 15px;
     width: 100%;
@@ -14,10 +14,10 @@
     align-items: center;
     justify-content: center;
   }
-
-  .search-control {
-    padding: 8px 15px;
-    width: 300px;
-    border-radius: 5px;
+  .button-image {
+    width: 50%;
+  }
+  .button-info h1 {
+    font: 2em sans-serif;
   }
 }

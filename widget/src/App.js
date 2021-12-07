@@ -1,5 +1,6 @@
 import { useState, StrictMode } from "react";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 import ThemeContext from "./ThemeContext";
 
 
@@ -10,7 +11,9 @@ const App = () => {
       <ThemeContext.Provider value={theme}>
         <div>
           <header>
-            <Link to="/">Shopify shop</Link>
+            <Link to="/">
+              <Button image = {""} name = {"Eazzy Pay"}/>
+            </Link>
           </header>
         </div>
       </ThemeContext.Provider>

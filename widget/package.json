@@ -2,11 +2,13 @@
     "name": "widget",
     "version": "1.0.0",
     "description": "Payment widget web server",
-    "main": "src/index.js",
+    "main": "server/index.js",
     "scripts": {
         "format": "prettier --write \"src/**/*.{js,jsx}\"",
         "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
         "dev": "parcel src/index.html",
+        "build:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
+        "watch:css": "postcss src/assets/tailwind.css -o src/assets/styles.css",
         "build:client": "parcel build --public-url ./dist/ src/index.html",
         "build:server": "parcel build -d dist-server --target node server/index.js",
         "build": "npm run build:client && npm run build:server",
@@ -22,6 +24,7 @@
         "@babel/preset-env": "7.13.5",
         "@babel/preset-react": "7.12.13",
         "@parcel/babel-preset-env": "^2.0.1",
+        "@tailwindcss/postcss7-compat": "2.0.3",
         "eslint": "7.18.0",
         "eslint-config-prettier": "8.1.0",
         "eslint-plugin-import": "2.22.1",
@@ -29,9 +32,8 @@
         "eslint-plugin-react": "7.22.0",
         "eslint-plugin-react-hooks": "4.2.0",
         "parcel": "1.12.3",
-        "prettier": "2.2.1",
-        "@tailwindcss/postcss7-compat": "2.0.3",
         "postcss": "7.0.35",
+        "prettier": "2.2.1",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@2.0.3"
     },
     "dependencies": {
