@@ -2,11 +2,15 @@
   "presets": [
     [
       "@babel/preset-react",
-      {
-        "runtime": "automatic"
-      }
-    ],
-    "@parcel/babel-preset-env"
+    {
+        "pragma": "dom", // default pragma is React.createElement (only in classic runtime)
+        "pragmaFrag": "DomFrag", // default is React.Fragment (only in classic runtime)
+        "throwIfNamespace": false, // defaults to true
+        "runtime": "classic" // defaults to classic
+        // "importSource": "custom-jsx-library" // defaults to react (only in automatic runtime)
+      },
+      "@parcel/babel-preset-env"
+    ]
   ],
   "env": {
     "development": {
