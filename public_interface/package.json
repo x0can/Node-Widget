@@ -1,0 +1,33 @@
+{
+  "name": "node-explorer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexmwaura/NodeJS-Explore.git"
+  },
+  "keywords": [
+    "distributed",
+    "systems",
+    "nodejs"
+  ],
+  "author": "alexmwaura",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexmwaura/NodeJS-Explore/issues"
+  },
+  "homepage": "https://github.com/alexmwaura/NodeJS-Explore#readme",
+  "devDependencies": {
+    "@kudobuzz/kbscripts": "^1.1.16",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3",
+    "mocha-junit-reporter": "^2.0.2"
+  },
+  "dependencies": {
+    "node-static-alias": "^1.1.2"
+  }
+}
